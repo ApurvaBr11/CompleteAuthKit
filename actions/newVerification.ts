@@ -27,7 +27,7 @@ export const newVarification = async (token:string)=>{
         }
     })
     await db.varificationToken.delete({
-        where:{id:existingUser.id}
+        where:{id:existingToken.id}
     })
     return {sucess:'Email verified  '}
 }
