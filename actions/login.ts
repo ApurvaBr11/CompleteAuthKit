@@ -25,7 +25,7 @@ export const login = async (values: z.infer<typeof LoginSchema>,callbackUrl?:str
 
   const existingUser = await getUserByEmail(email)
   if (!existingUser || !existingUser.email || !existingUser.password) {
-    return { error: "Email doesnt existttt"}
+    return { error: "Email doesnt exist"}
   }
   
   
