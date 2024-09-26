@@ -7,7 +7,7 @@ interface ProtectedlayoutProps {
 
 const Protectedlayout = ({children}:ProtectedlayoutProps) => {
   return (
-    <div className='h-full w-full flex flex-col gap-y-10 items-center justify-center bg-cyan-500'>
+    <div className='h-full w-full flex flex-col gap-y-10 items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100'>
         <Navbar/>
         {children}
     </div>
